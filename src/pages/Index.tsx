@@ -1,16 +1,19 @@
 import { SystemStatsWidget } from "@/components/dashboard/SystemStatsWidget";
 import { ServicesGrid } from "@/components/dashboard/ServicesGrid";
+import { useSystemStats } from "@/hooks/useSystemData";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Server, Clock, Wifi, Shield } from "lucide-react";
 
 const Index = () => {
+  const stats = useSystemStats();
+  
   return (
     <div className="space-y-6 p-6">
       {/* Welcome Section */}
       <div className="space-y-2">
-        <h1 className="text-3xl font-bold text-foreground">Server Dashboard</h1>
+        <h1 className="text-3xl font-bold text-foreground">NexusCore Dashboard</h1>
         <p className="text-muted-foreground">
-          Monitor and manage your server infrastructure
+          Real-time server monitoring and management platform
         </p>
       </div>
 
@@ -73,10 +76,10 @@ const Index = () => {
       <div className="space-y-4">
         <h2 className="text-xl font-semibold text-foreground">System Resources</h2>
         <SystemStatsWidget
-          cpuUsage={45}
-          memoryUsage={68}
-          storageUsage={32}
-          networkActivity={78}
+          cpuUsage={stats.cpu}
+          memoryUsage={stats.memory}
+          storageUsage={stats.storage}
+          networkActivity={stats.network}
         />
       </div>
 

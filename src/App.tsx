@@ -7,6 +7,11 @@ import { SidebarProvider } from "@/components/ui/sidebar";
 import { ServerSidebar } from "@/components/dashboard/ServerSidebar";
 import { DashboardHeader } from "@/components/dashboard/DashboardHeader";
 import Index from "./pages/Index";
+import SystemMonitor from "./pages/SystemMonitor";
+import Services from "./pages/Services";
+import Containers from "./pages/Containers";
+import Storage from "./pages/Storage";
+import Network from "./pages/Network";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +30,11 @@ const App = () => (
               <main className="flex-1 overflow-auto">
                 <Routes>
                   <Route path="/" element={<Index />} />
+                  <Route path="/monitor" element={<SystemMonitor />} />
+                  <Route path="/services" element={<Services />} />
+                  <Route path="/containers" element={<Containers />} />
+                  <Route path="/storage" element={<Storage />} />
+                  <Route path="/network" element={<Network />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
