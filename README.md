@@ -1,73 +1,73 @@
-# Welcome to your Lovable project
+🚀 NexusCore Dashboard
 
-## Project info
+NexusCore is a modern, web-based control panel for managing your Space Engineers dedicated servers. It uses Docker to keep your servers organized and running smoothly, all through a clean and simple interface.
 
-**URL**: https://lovable.dev/projects/16636c5b-cf8b-4861-9ce9-830460579a70
+(It's highly recommended to replace this with a GIF of your dashboard in action!)
 
-## How can I edit this code?
+✨ Core Features
 
-There are several ways of editing your application.
+🖥️ Live Server Console: Interact with your server's console directly from your web browser.
 
-**Use Lovable**
+🐳 Docker-Powered: Each game server runs in its own isolated container for maximum stability.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/16636c5b-cf8b-4861-9ce9-830460579a70) and start prompting.
+✅ Simple Server Controls: Easily create, start, stop, and manage your servers from one place.
 
-Changes made via Lovable will be committed automatically to this repo.
+🔒 Secure User Login: Keep your control panel protected with a secure authentication system.
 
-**Use your preferred IDE**
+📱 Modern & Responsive UI: Manage your servers from your desktop or on the go.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+🚀 Quick Start (via Docker)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Get up and running in under a minute.
 
-Follow these steps:
+Clone the repository:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Generated bash
+git clone https://github.com/MarbleCeo/stellar-server-control-panel.git
+cd stellar-server-control-panel
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
 
-# Step 3: Install the necessary dependencies.
-npm i
+Set your secret key:
+Open the docker-compose.yml file and change the JWT_SECRET to a long, random string of your choice.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Generated yaml
+# in docker-compose.yml
+environment:
+  - JWT_SECRET=your_super_secret_and_long_random_string_here
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Yaml
+IGNORE_WHEN_COPYING_END
 
-**Edit a file directly in GitHub**
+Launch the dashboard:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Generated bash
+docker-compose up -d --build
+IGNORE_WHEN_COPYING_START
+content_copy
+download
+Use code with caution.
+Bash
+IGNORE_WHEN_COPYING_END
 
-**Use GitHub Codespaces**
+You can now access your new dashboard at http://localhost:3000.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+❤️ Like NexusCore? Support Its Development!
 
-## What technologies are used for this project?
+Hey there! NexusCore is a passion project built to make managing Space Engineers servers easier for everyone. I've poured many hours into developing and refining it in my free time.
 
-This project is built with:
+If you find this tool useful and want to help support its future, please consider buying me a coffee!
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Every contribution, big or small, is incredibly motivating and helps fuel the late-night coding sessions needed to add new features, fix bugs, and keep the project alive. Thank you for your support!
 
-## How can I deploy this project?
+<a href="https://www.buymeacoffee.com/your_username" target="_blank">
+<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;">
+</a>
 
-Simply open [Lovable](https://lovable.dev/projects/16636c5b-cf8b-4861-9ce9-830460579a70) and click on Share -> Publish.
+License
 
-## Can I connect a custom domain to my Lovable project?
+MIT
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+#space-engineers #gameserver #control-panel #dashboard #docker #nodejs #react #server-management #game-hosting #expressjs #socketio #javascript
